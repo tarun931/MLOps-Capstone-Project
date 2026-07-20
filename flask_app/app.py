@@ -11,6 +11,12 @@ import string
 import re
 import dagshub
 
+from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv(Path(__file__).resolve().parents[1] / ".env")
+
+
 import warnings
 warnings.simplefilter("ignore", UserWarning)
 warnings.filterwarnings("ignore")
